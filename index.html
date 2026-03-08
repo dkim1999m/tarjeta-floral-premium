@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Día de la Mujer · Yeny</title>
+  <meta name="description" content="Tarjeta premium animada para Yeny, con intro floral 3D, estilos variables y descarga exacta de la tarjeta mostrada." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;700;800&family=Marcellus&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-scene" aria-hidden="true">
+    <div class="mesh mesh-a"></div>
+    <div class="mesh mesh-b"></div>
+    <div class="mesh mesh-c"></div>
+    <div class="mesh mesh-d"></div>
+
+    <div class="venus venus-a"></div>
+    <div class="venus venus-b"></div>
+
+    <div class="petal-rain p1"></div>
+    <div class="petal-rain p2"></div>
+    <div class="petal-rain p3"></div>
+    <div class="petal-rain p4"></div>
+    <div class="petal-rain p5"></div>
+    <div class="petal-rain p6"></div>
+    <div class="petal-rain p7"></div>
+    <div class="petal-rain p8"></div>
+
+    <div class="spark s1"></div>
+    <div class="spark s2"></div>
+    <div class="spark s3"></div>
+    <div class="spark s4"></div>
+    <div class="spark s5"></div>
+    <div class="spark s6"></div>
+
+    <div class="page-mark">KDCC</div>
+  </div>
+
+  <main class="page-shell">
+    <section class="intro-screen" id="introCard" aria-label="Intro floral">
+      <div class="intro-stage">
+        <div class="intro-glow glow-a"></div>
+        <div class="intro-glow glow-b"></div>
+        <div class="intro-ring ring-a"></div>
+        <div class="intro-ring ring-b"></div>
+
+        <div class="flower flower-left">
+          <span class="core"></span>
+          <span class="petal pa"></span>
+          <span class="petal pb"></span>
+          <span class="petal pc"></span>
+          <span class="petal pd"></span>
+          <span class="petal pe"></span>
+          <span class="petal pf"></span>
+          <span class="stem"></span>
+          <span class="leaf leaf-a"></span>
+          <span class="leaf leaf-b"></span>
+        </div>
+
+        <div class="flower flower-center">
+          <span class="core"></span>
+          <span class="petal pa"></span>
+          <span class="petal pb"></span>
+          <span class="petal pc"></span>
+          <span class="petal pd"></span>
+          <span class="petal pe"></span>
+          <span class="petal pf"></span>
+          <span class="stem"></span>
+          <span class="leaf leaf-a"></span>
+          <span class="leaf leaf-b"></span>
+        </div>
+
+        <div class="flower flower-right">
+          <span class="core"></span>
+          <span class="petal pa"></span>
+          <span class="petal pb"></span>
+          <span class="petal pc"></span>
+          <span class="petal pd"></span>
+          <span class="petal pe"></span>
+          <span class="petal pf"></span>
+          <span class="stem"></span>
+          <span class="leaf leaf-a"></span>
+          <span class="leaf leaf-b"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal-panel hidden" id="revealPanel" aria-label="Tarjeta del Día de la Mujer">
+      <div class="card-stage" id="cardStage">
+        <div class="stage-aura aura-a"></div>
+        <div class="stage-aura aura-b"></div>
+
+        <article class="card-preview style-1 font-1" id="cardPreview">
+          <div class="card-sheen"></div>
+          <div class="card-grain"></div>
+          <div class="card-bloom bloom-a"></div>
+          <div class="card-bloom bloom-b"></div>
+          <div class="card-ornament ornament-top"></div>
+          <div class="card-ornament ornament-bottom"></div>
+          <div class="card-inner">
+            <p class="card-dayline">Feliz Día de la Mujer</p>
+            <h1 class="card-name">Yeny</h1>
+            <p class="card-message" id="cardMessage"></p>
+            <p class="card-mark">Desarrollado por KDCC</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-primary" id="downloadBtn" type="button">Descargar tarjeta</button>
+        <button class="btn btn-secondary" id="shuffleBtn" type="button">Más tarjetas</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="rose-overlay" id="roseOverlay" aria-hidden="true">
+    <div class="rose-scene">
+      <div class="rose-bloom">
+        <span class="rose-center"></span>
+        <span class="rose-petal rp1"></span>
+        <span class="rose-petal rp2"></span>
+        <span class="rose-petal rp3"></span>
+        <span class="rose-petal rp4"></span>
+        <span class="rose-petal rp5"></span>
+        <span class="rose-petal rp6"></span>
+        <span class="rose-petal rp7"></span>
+      </div>
+      <span class="rose-stem"></span>
+      <span class="rose-leaf rl1"></span>
+      <span class="rose-leaf rl2"></span>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
